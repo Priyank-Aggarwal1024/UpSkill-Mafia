@@ -1,0 +1,52 @@
+.refund {
+    max-width: 100%;
+    min-height: 1024px;
+    margin: 48px 0;
+    padding: 64px 128px;
+    display: grid;
+    gap: 56px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+}
+
+.refund-heading {
+    font-size: 48px;
+    text-align: center;
+}
+
+.refund-card {
+    margin: 0 auto;
+    width: 598px;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    background: linear-gradient(180deg, #9849FF 0%, #841EE3 93.51%);
+
+}
+
+.refund-offer {
+    font-size: 28px;
+}
+
+@media (width<980px) {
+    .refund {
+        padding: 64px 48px;
+    }
+
+    .refund-heading {
+        font-size: 36px;
+    }
+}
+
+@media (width<480px) {
+    .refund-heading {
+        text-align: start;
+        font-size: 24px;
+    }
+
+    .refund {
+        padding: 48px 24px;
+    }
+}

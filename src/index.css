@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ----------------------- Global Variables --------------------------- */
+:root {
+  --bgColorPink: linear-gradient(180deg, rgb(183, 59, 190) 0%, rgb(153, 46, 157) 93.51%);
+  --bgColorLightYellow: rgba(255, 252, 234, 1);
+  --bgLightPink: rgba(252, 245, 254, 1);
+  --bgPinkLinearGradient: linear-gradient(rgba(183, 59, 190, 0.05), rgba(153, 46, 157, 0.05));
+  --bgGray: rgba(59, 59, 62, 1);
+  --txtColorPink: rgb(153, 46, 157);
+  --txtColorDarkPink: rgba(69, 13, 69, 1);
+  --txtColorYellow: rgba(187, 83, 2, 1);
+  --txtYellowLinearGradient: linear-gradient(180deg, rgb(255, 165, 11) 0%, rgb(226, 121, 0) 93.51%);
+  --txtGrayColor: rgba(104, 105, 114, 1);
+  --txtDarkGrayColor: rgba(76, 77, 82, 1);
+  --txtLightGrayColor: rgba(131, 132, 141, 1);
+  --borderLightPink: 1px solid rgba(249, 235, 252, 1);
+  --borderDarkPink: 1px solid rgba(249, 235, 252, 1);
+  --borderLightYellow: 1px solid rgba(255, 244, 197, 1);
+  --borderDarkYellow: 1px solid rgba(255, 165, 11, 1);
+}
+
+/* ------------------------ Global Classes ----------------------- */
+.bg-pink {
+  background: var(--bgColorPink);
+}
+
+.bg-light-yellow {
+  background-color: var(--bgColorLightYellow);
+}
+
+.bg-light-pink {
+  background-color: var(--bgLightPink);
+}
+
+.bg-gradient-pink {
+  background: var(--bgPinkLinearGradient);
+}
+
+.bg-gray {
+  background-color: var(--bgGray);
+}
+
+.text-pink {
+  color: var(--txtColorPink);
+}
+
+.text-dark-pink {
+  color: var(--txtColorDarkPink);
+}
+
+.text-yellow {
+  color: var(--txtColorYellow);
+}
+
+.text-gray {
+  color: var(--txtGrayColor);
+}
+
+.text-dark-gray {
+  color: var(--txtDarkGrayColor);
+}
+
+.text-light-gray {
+  color: var(--txtLightGrayColor);
+}
+
+.text-gradient-yellow {
+  color: var(--txtYellowLinearGradient);
+}
+
+.b-light-pink {
+  border: var(--borderLightPink);
+}
+
+.b-light-yellow {
+  border: var(--borderLightYellow);
+}
+
+.b-dark-pink {
+  border: var(--borderDarkPink);
+}
+
+.b-dark-yellow {
+  border: var(--borderDarkYellow);
+}
+
+.text-white {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (width<580px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (width<480px) {
+  html {
+    font-size: 12px;
+  }
+}

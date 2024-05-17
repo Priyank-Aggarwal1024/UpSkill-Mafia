@@ -1,0 +1,151 @@
+.overview {
+    width: 100%;
+    max-height: 1440px;
+    margin-bottom: 4rem;
+}
+
+.overview-hero {
+    max-width: 766px;
+    margin: 4rem 8rem auto;
+}
+
+.hero-iit {
+    max-width: 355px;
+    font-size: 1.25rem;
+    padding: 18px 16px 18px 16px;
+    border-radius: 1rem;
+}
+
+.overview-hero h1 {
+    font-size: 4rem;
+}
+
+.overview-hero>p {
+    margin: 1rem auto 2rem auto;
+}
+
+.hero-button {
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hero-button p {
+    padding: 12px 8px 12px 8px;
+    border-radius: 100px;
+}
+
+.hero-button-bottom {
+    margin: 2rem auto;
+}
+
+.hero-button-bottom>p {
+    text-align: center;
+}
+
+.know-more {
+    padding: 1.5rem;
+}
+
+.enroll-now {
+    padding: 1.5rem 3rem;
+    border-radius: 20px;
+}
+
+.va-middle {
+    vertical-align: middle;
+    margin: auto 10px;
+}
+
+.overview-footer {
+
+    height: 172px;
+    padding: 36px 128px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.border-card {
+    border-left: 2px solid rgb(153, 46, 157);
+}
+
+.overview-footer-card {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: auto 1rem;
+}
+
+.overview-footer-card>img {
+    width: 62px;
+    height: 62px;
+}
+
+.card-about-heading {
+    font-size: 40px;
+    line-height: 1;
+}
+
+@media (width<1440px) {
+    .overview-footer {
+        padding: 36px 0px;
+    }
+}
+
+@media (width<1080px) {
+    .overview-footer>div:nth-of-type(4) {
+        display: none;
+    }
+}
+
+@media (width<780px) {
+    .overview-footer>div:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media (width<680px) {
+    .overview-hero {
+        margin: 4rem 4rem auto;
+    }
+
+    .hero-iit {
+        max-width: 355px;
+        font-size: 1.25rem;
+        padding: 18px 16px 18px 16px
+    }
+}
+
+@media (width<480px) {
+    .overview-hero {
+        margin: 4rem 1rem auto;
+    }
+
+    .hero-iit {
+        max-width: 355px;
+        font-size: 1.25rem;
+        padding: 12px 8px 12px 8px
+    }
+
+    .hero-button-bottom {
+        flex-direction: column;
+
+    }
+
+    .hero-button-bottom>p {
+        width: 100%;
+    }
+
+    .overview-footer>div:nth-of-type(2) {
+        display: none;
+    }
+}
+
+@media (width<360px) {
+    .overview-footer {
+        display: none;
+    }
+}
