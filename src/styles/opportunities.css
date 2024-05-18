@@ -31,7 +31,7 @@
 .opportunity-card-img-2 {
     width: 100%;
     aspect-ratio: 1;
-    background: url('./Internship.png');
+    background: url('/Internship.png');
     background-size: 100% 100%;
     background-position: center center;
     align-self: center;
@@ -236,7 +236,7 @@
 
 @media (width<480px) {
     .opportunities {
-        padding: 48px 16px;
+        padding: 48px 8px;
     }
 
     .opportunity-card {
@@ -245,7 +245,7 @@
     }
 
     .opportunity-card>div {
-        padding: 12px;
+        padding: 6px;
         border-radius: 16px;
         width: 100%;
     }

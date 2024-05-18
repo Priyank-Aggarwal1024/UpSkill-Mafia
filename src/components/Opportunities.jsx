@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/opportunities.css'
 import Star from '/AwardStarPink.png'
-
+import Internship from '../assets/Internship.png'
 function Opportunities(props) {
     return (
         <>
@@ -62,7 +62,8 @@ function Opportunities(props) {
                     <div className="opportunity-card-2 bg-light-yellow b-light-yellow">
                         <h3 className="sub-heading text-dark-pink">Bag Internship Opportunities!</h3>
                         <p className="opportunity-card-2-about">With every course, we make you not only industry-ready but also help you crack your first internship.</p>
-                        <div className="opportunity-card-img-2"></div>
+                        {/* <div className="opportunity-card-img-2"></div> */}
+                        <img src={Internship} className="opportunity-card-img-2" alt="Internship" />
                     </div>
                 </div>
             </section>

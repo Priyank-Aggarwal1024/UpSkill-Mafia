@@ -1,0 +1,218 @@
+.internship {
+    max-width: 1366px;
+    min-height: 997px;
+    margin: 2rem auto;
+    padding: 2rem 2rem;
+}
+
+.internship-heading {
+    font-size: 36px;
+    background: linear-gradient(180deg, #B872D0 0%, #372FAA 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.internship-highlights-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 190px);
+    /* grid-template-rows: repeat(auto-fill, 190px); */
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.highlight-card {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0.5px 10px 1.5px rgba(165, 130, 179, 0.22);
+    height: 190px;
+    border-radius: 10px;
+    padding: 1rem .5rem;
+}
+
+.highlight-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.highlight-card-heading {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    text-align: center;
+    background: linear-gradient(90.24deg, rgba(63, 55, 201, 0.74) -11.5%, rgba(177, 66, 64, 0.53) 169.22%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.internship-process {
+    margin: 3rem auto;
+
+}
+
+.internship-process-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.process-card-2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    position: relative;
+    left: 50%;
+    margin-top: 3rem;
+}
+
+.process-card-4 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    position: relative;
+    left: 50%;
+    margin-top: 3rem;
+}
+
+.process-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    position: relative;
+}
+
+.process-line {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+.process-icon {
+    z-index: 1000;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.internship-process-cards>div:nth-of-type(1) .process-line {
+    transform: rotateZ(50deg);
+    transform-origin: 20px 20px;
+}
+
+.internship-process-cards>div:nth-of-type(3) .process-line {
+    transform: rotateZ(50deg);
+    transform-origin: 20px 20px;
+}
+
+.internship-process-cards>div:nth-of-type(5) .process-line {
+    display: none;
+}
+
+.internship-process-cards>div:nth-of-type(even) .process-line {
+    transform: rotateZ(312deg);
+    transform-origin: 32px -32px;
+}
+
+.process-about {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(21, 14, 66, 1);
+    z-index: 1000;
+    /* background-color: white; */
+}
+
+@media (width<480px) {
+    .internship {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (width<980px) {
+    .process-card-2 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        position: relative;
+        left: 50%;
+        margin-top: 1rem;
+    }
+
+    .process-card-4 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        position: relative;
+        left: 50%;
+        margin-top: 1rem;
+    }
+}
+
+@media (width<880px) {
+    .internship-process-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .process-card-2 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        position: relative;
+        left: 0%;
+    }
+
+    .process-card-4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        position: relative;
+        left: 0%;
+    }
+
+    #process-line {
+        all: unset;
+        position: absolute;
+        height: calc(100% + 30px);
+        width: 2px;
+        background-color: rgb(0, 0, 0);
+        left: 32px;
+        top: 50%;
+    }
+
+    .process-card-5 #process-line {
+        all: unset;
+    }
+}
+
+@media (width>1080px) {
+    .process-line {
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .internship-process-cards>div:nth-of-type(even) .process-line {
+        transform: rotateZ(323deg);
+        transform-origin: 32px -32px;
+    }
+
+    .internship-process-cards>div:nth-of-type(1) .process-line {
+        transform: rotateZ(40deg);
+        transform-origin: 20px 20px;
+    }
+
+    .internship-process-cards>div:nth-of-type(3) .process-line {
+        transform: rotateZ(40deg);
+        transform-origin: 20px 20px;
+    }
+}
