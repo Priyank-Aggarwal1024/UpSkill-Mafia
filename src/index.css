@@ -107,14 +107,58 @@ a {
   display: flex;
 }
 
-@media (width<580px) {
+.f-20 {
+  font-size: 1.25rem;
+}
+
+.f-40 {
+  font-size: 2.5rem;
+}
+
+.gradient {
+  background: linear-gradient(to right, var(--txtColorPink) 30%, var(--txtColorYellow));
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 1.75rem;
+}
+
+@media (width<980px) {
   html {
     font-size: 14px;
   }
+
+  .section-heading {
+    font-size: 2.66rem;
+  }
+
+}
+
+@media (width<680px) {
+  html {
+    font-size: 14px;
+  }
+
+  .section-heading {
+    font-size: 2.66rem;
+  }
+
 }
 
 @media (width<480px) {
   html {
     font-size: 12px;
+  }
+
+  .section-heading {
+    font-size: 2.33rem;
+    text-align: start;
   }
 }

@@ -1,0 +1,96 @@
+.opportunities {
+    max-width: 100%;
+    min-height: 915px;
+    padding: 96px 128px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    gap: 2rem;
+}
+
+.opportunity-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 550px));
+    grid-template-rows: min-content;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.opportunity-card>div {
+    padding: 36px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 32px;
+}
+
+.opportunity-card-img-2 {
+    width: 100%;
+    aspect-ratio: 1;
+    background: url('./Internship.png');
+    max-width: 417px;
+    background-size: 100% 100%;
+    background-position: center center;
+    align-self: center;
+}
+
+.opportunity-card-img-1 {
+    /* width: 100%; */
+    /* aspect-ratio: 1; */
+    /* background: url('./new-certiciate-design.png');
+    max-width: 417px;
+    aspect-ratio: 1.1;
+    background-size: 100% 100%;
+    background-position: center center;
+    align-self: center; */
+}
+
+/* .opportunity-card-1{
+
+} */
+
+.opportunity-card-2>h3 {
+    color: rgba(72, 25, 0, 1);
+    text-align: start;
+}
+
+.opportunity-card-1>h2 {
+    text-align: center;
+}
+
+
+
+@media (width<980px) {
+    .opportunities {
+        padding: 96px 64px;
+    }
+}
+
+@media (width<680px) {
+    .opportunities {
+        padding: 64px 36px;
+    }
+
+    .opportunity-card>div {
+        padding: 28px;
+        border-radius: 1.5rem;
+    }
+}
+
+@media (width<480px) {
+    .opportunities {
+        padding: 48px 24px;
+    }
+
+    .opportunity-card {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    }
+
+    .opportunity-card>div {
+        padding: 20px;
+        border-radius: 16px;
+    }
+}

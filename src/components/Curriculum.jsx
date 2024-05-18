@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../styles/curriculum.css'
 import CourseCard from './CourseCard';
 function Curriculum(props) {
@@ -20,6 +20,16 @@ function Curriculum(props) {
             setString2("Data Science ");
         }
     }
+    useEffect(() => {
+        if (window.innerWidth < "480") {
+            setString1("Full Stack");
+            setString2("Full Stack Developer")
+        }
+        else {
+            setString1("DATASCIENCE");
+            setString2("Data Science ");
+        }
+    })
     window.addEventListener('resize', resize)
     return (
         <>
