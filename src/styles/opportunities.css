@@ -9,12 +9,12 @@
 }
 
 .opportunity-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 550px));
-    grid-template-rows: min-content;
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 550px));
+    grid-template-rows: min-content; */
     gap: 40px;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
 }
 
@@ -24,32 +24,26 @@
     justify-content: space-between;
     flex-direction: column;
     border-radius: 32px;
+    width: 50%;
+    /* height: fit-content; */
 }
 
 .opportunity-card-img-2 {
     width: 100%;
     aspect-ratio: 1;
     background: url('./Internship.png');
-    max-width: 417px;
     background-size: 100% 100%;
     background-position: center center;
     align-self: center;
 }
 
 .opportunity-card-img-1 {
-    /* width: 100%; */
-    /* aspect-ratio: 1; */
-    /* background: url('./new-certiciate-design.png');
-    max-width: 417px;
-    aspect-ratio: 1.1;
-    background-size: 100% 100%;
-    background-position: center center;
-    align-self: center; */
+    /* max-height: 300px; */
+    /* background-size: 150% 150%; */
+    scale: .8;
+
 }
 
-/* .opportunity-card-1{
-
-} */
 
 .opportunity-card-2>h3 {
     color: rgba(72, 25, 0, 1);
@@ -60,17 +54,143 @@
     text-align: center;
 }
 
-
-
-@media (width<980px) {
-    .opportunities {
-        padding: 96px 64px;
-    }
+.opportunity-button {
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-@media (width<680px) {
+.opportunity-button>p {
+    border: 1px solid rgba(244, 214, 248, 1);
+    border-radius: 100px;
+    padding: 12px 16px 12px 12px;
+    background-color: rgba(249, 235, 252, 1);
+}
+
+.certificate {
+    max-width: 450px;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    margin: 1rem 0;
+    max-height: 321px;
+
+}
+
+.certificate-left {
+    background: linear-gradient(202.82deg, #A355A3 0%, #912191 100%);
+    padding: 1rem;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.ui-ux {
+    padding: 4px;
+    width: max-content;
+    color: white;
+    border: 1px solid white;
+    font-size: 7px;
+    margin-bottom: .5rem;
+}
+
+.certificate-right {
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.certificate-left-top {
+    font-size: 5.5px;
+    text-transform: uppercase;
+    color: rgba(235, 237, 239, 1);
+}
+
+.certificate-right {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.certificate-right-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 6px;
+    color: rgba(105, 119, 129, 1);
+
+}
+
+
+.presented {
+    text-transform: uppercase;
+    font-size: 7px;
+    color: rgba(155, 164, 171, 1);
+
+}
+
+.certificate-name {
+    color: rgba(55, 73, 87, 1);
+    font-weight: 600;
+
+}
+
+.certificate-about {
+    font-family: Poppins;
+    font-size: 6.22px;
+    font-weight: 400;
+    line-height: 11.54px;
+    text-align: left;
+    color: rgba(105, 119, 129, 1);
+
+}
+
+.certificate-right-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sample {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 17.17px;
+    text-align: left;
+    color: rgba(88, 88, 88, 1);
+
+}
+
+.sign-name {
+    border-top: .5px solid gray;
+    font-size: 7px;
+    color: rgba(55, 73, 87, 1);
+    padding: .2rem 1rem 0 1rem;
+
+
+}
+
+.co-founder {
+    font-size: 5px;
+    color: rgba(155, 164, 171, 1);
+
+}
+
+@media (width<1180px) {
     .opportunities {
-        padding: 64px 36px;
+        padding: 96px 64px;
     }
 
     .opportunity-card>div {
@@ -79,9 +199,44 @@
     }
 }
 
-@media (width<480px) {
+@media (width<980px) {
+    .opportunities {
+        padding: 64px 36px;
+    }
+
+    .opportunity-card {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .certificate {
+        min-height: 180px;
+    }
+
+    .opportunity-card>div {
+        padding: 20px;
+        border-radius: 1.5rem;
+        width: 70%;
+    }
+}
+
+@media (width<680px) {
+
     .opportunities {
         padding: 48px 24px;
+    }
+
+    .opportunity-card>div {
+        padding: 16px;
+        border-radius: 1.5rem;
+        width: 90%;
+    }
+}
+
+@media (width<480px) {
+    .opportunities {
+        padding: 48px 16px;
     }
 
     .opportunity-card {
@@ -90,7 +245,8 @@
     }
 
     .opportunity-card>div {
-        padding: 20px;
+        padding: 12px;
         border-radius: 16px;
+        width: 100%;
     }
 }
